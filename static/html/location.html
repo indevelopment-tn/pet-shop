@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/pet-shop/static/css/location.css">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+    <title>'Location'</title>
+
+</head>
+
+<body>
+
+<header>
+    <div id="container">
+
+        <div id="logo">
+            <a href="/pet-shop/static/index.php"><p>Sandy's Pet Shop</p></a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="/pet-shop/static/index.php">Home</a></li>
+                <li><a href="/pet-shop/static/html/about.html">About</a></li>
+                <li><a href="/pet-shop/static/html/location.html">Location</a></li>
+                <li><a href="/pet-shop/static/html/grooming.html">Grooming</a></li>
+                <li><a href="/pet-shop/static/html/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+</header>
+
+<div id="content">
+
+
+    <div id="header">
+        <p>Our Location!</p>
+
+
+    </div>
+
+    <div id="paragraph">
+
+        <p>Monday - Friday: 8:00 am - 6:00 pm<br>
+            Saturday: 8:00 am -  5:00pm<br>
+            Sunday: CLOSED<br></p>
+
+        <div id="map" style="width:400px;height:400px;background:yellow"></div>
+
+        <script>
+            function myMap() {
+                var mapOptions = {
+                    center: new google.maps.LatLng(51.5, -0.12),
+                    zoom: 10,
+                    mapTypeId: google.maps.MapTypeId.HYBRID
+                }
+                var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+            }
+        </script>
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+    </div>
+
+</div>
+
+
+<div id="footer">
+
+    <p> <h4>Store Hours</h4><br>
+        Monday - Friday: 8:00 am - 6:00 pm<br>
+        Saturday: 8:00 am -  5:00pm<br>
+        Sunday: CLOSED <br></p>
+
+</div>
+
+
+
+</body>
+</html>
