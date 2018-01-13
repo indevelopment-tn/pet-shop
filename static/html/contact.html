@@ -1,89 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="/pet-shop/static/css/contact.css">
-    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
-    <title>'Contact'</title>
+    <title>contact form</title>
+    <link rel="stylesheet" type="text/css" href="/pet-shop/static/css/contact%20form%20style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </head>
-
 <body>
 
-<header>
-    <div id="container">
+<div class="container">
+    <form id="contact" action="" method="post">
+        <h4>Contact us </h4>
+        <fieldset>
+            <input name="name" placeholder="Your name" type="text" tabindex="1" required autofocus>
+        </fieldset>
+        <fieldset>
+            <input name="email" placeholder="Your Email Address" type="email" tabindex="2" required>
+        </fieldset>
+        <fieldset>
+            <textarea name="message" placeholder="Type your message here...." tabindex="5" required></textarea>
+        </fieldset>
+        <fieldset>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+        </fieldset>
 
-        <div id="logo">
-            <a href="/pet-shop/static/html/index.html"><p>Sandy's Pet Shop</p></a>
-        </div>
-
-        <nav>
-            <ul>
-                <li><a href="/pet-shop/static/index.php">Home</a></li>
-                <li><a href="/pet-shop/static/html/about.html">About</a></li>
-                <li><a href="/pet-shop/static/html/location.html">Location</a></li>
-                <li><a href="/pet-shop/static/html/grooming.html">Grooming</a></li>
-                <li><a href="/pet-shop/static/html/contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-
-</header>
-
-
-    <div id="content">
-
-
-        <div id="header">
-            <p>Contact Us</p>
-
-
-        </div>
-
-
-        <div id="paragraph">
-
-            <p>Lorem ipsum dolor sit amet, ut fugit audiam consulatu his.
-                Et quo erat theophrastus, no semper principes per, meliore nostrum
-                expetenda no pro. Persius adipisci ei est, ex eos suas wisi periculis.
-                Pri nullam postulant id. Alia salutatus consectetuer quo no, blandit
-                molestie pericula mea ei.</p>
-
-
-        </div>
-
-        <div class="container2">
-            <form action="/action_page.php">
-
-                <label for="fname">First Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-
-                </select>
-
-                <label for="subject">Subject</label>
-                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-                <input type="submit" value="Submit">
-
-            </form>
-        </div>
-
-
-    </div>
-
-
-<div id="footer">
-
-    <p> <h4>Store Hours</h4><br>
-        Monday - Friday: 8:00 am - 6:00 pm<br>
-        Saturday: 8:00 am -  5:00pm<br>
-        Sunday: CLOSED <br></p>
-
+    </form>
 </div>
+
+<script src="/pet-shop/static/js/contact java.js"></script>
 
 </body>
 </html>
