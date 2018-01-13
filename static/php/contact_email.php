@@ -13,9 +13,9 @@ ini_set("mail.log", "/tmp/mail.log");
 ini_set("mail.add_x_header", TRUE);
 
 //variables
-$name = strip_tags(htmlspecialchars($_POST['Name']));
-$email_address = strip_tags(htmlspecialchars($_POST['Email']));
-$message = strip_tags(htmlspecialchars($_POST['Message']));
+$name = strip_tags(htmlspecialchars($_POST['name']));
+$email_address = strip_tags(htmlspecialchars($_POST['email']));
+$message = strip_tags(htmlspecialchars($_POST['message']));
 
 // Create the email and send the message
 $to = 'brickyjenkins@gmail.com'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.

@@ -43,6 +43,9 @@ switch ($page) {
     case 'contact':
         $content_page = 'contact.html';
         break;
+//    case 'email_contact':
+//        $content_page = 'contact_email.php';
+//        break;
     default:
         # default page
         $content_page = 'home.html';
