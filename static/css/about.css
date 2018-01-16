@@ -1,138 +1,165 @@
-*{
-    margin: 0;
-    padding: 0;
-
+* {
+ margin: 0;
 }
 
 body{
-    background-color: white;
-}
-
-#container{
-    width: 95%;
-    margin: 0 auto;
-}
-
-header{
-    background: white;
-    font-family: Arial;
-    font-size: 15px;
-
-}
-
-header::after{
-    content: '';
-    display: table;
-    clear: both;
-}
-
-#logo{
-    float: left;
-    font-family: 'Satisfy', cursive;
-    padding: 5px;
-    color: purple;
-    font-size: 25px;
-    margin-left: 10px;
-
-
-}
-
-#logo a{
-    text-decoration: none;
-}
-
-nav{
-    float: right
-}
-
-nav ul{
-    list-style: none;
-    padding: 0;
     margin: 0;
-}
-
-nav li{
-    display: inline-block;
-    margin-left: 50px;
-    padding-top: 15px;
-
-
-    position: relative;
-}
-nav ul li a{
-    text-decoration: none;
-    text-transform: uppercase;
-    color: purple;
-}
-
-nav a:hover{
-    color: darkorange;
-}
-
-nav a::before{
-    content: '';
-    display: block;
-    height: 5px;
-    background-color: purple;
-
-    position: absolute;
-    top: 0;
-    width: 0;
-    transition: all ease-in-out 250ms;
-}
-
-nav a:hover::before{
-    width: 100%;
-}
-
-#content{
-    margin-left: 35px;
-    margin-top: 35px;
-    margin-bottom: 450px;
-
-
-}
-
-img{
-    float: right;
-    margin-right: 35px;
-    padding-left: 5%;
-}
-
-#header{
-    margin-bottom: 10px;
-    font-family: Arial;
-    text-transform: uppercase;
-    color: purple;
-    font-size: 25px;
-}
-
-#paragraph{
-    margin-right: 60%;
-    font-family: "Arial Narrow";
-    text-align: justify;
-    font-size: 15px;
-
-}
-
-#footer {
-    float: bottom;
-    clear: both;
-    left: 0;
-    bottom: 0;
-    width: 100%;
     background-color: white;
+    font-family: Arial;
+}
+
+body h2{
     color: purple;
-    text-align: left;
-    padding-top: 35px;
-    padding-left: 25px;
-    padding-bottom: 15px;
-    font-family: "Arial";
-    font-size: 13px;
+}
+
+
+
+/*ABOUT*/
+
+ .about{
+    width: 100%;
+    padding:  0 30px;
+    text-align: center;
+}
+
+.about p{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+/*STAFF*/
+
+.staff {
+    text-align: center;
 
 }
 
-#footer header {
-    font-family: "Arial Rounded MT Bold";
+.staff h2,
+.staff h4 {
+    margin: 20px 0 20px;
+}
+
+
+.staff p {
+    color: #737373;
+}
+
+.staff img {
+
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    alignment: center;
+    margin-left: 30px;
+    
+}
+
+/*CONTACT*/
+
+.contact {
+
+    padding: 50px 0 80px;
+    text-align: center;
+}
+
+.contact p {
+
+    padding-bottom: 80px;
+    color: #737373;
+}
+
+.contact h2 {
+
+    margin: 20px 0 20px;
+}
+
+.contact .input-group {
+
+    margin-bottom: 25px;
+}
+
+.contact .form-control {
+
+    border-radius: 0 !important;
+}
+
+.contact span {
+
+    border-radius: 0 !important;
+}
+
+.contact .btn {
+
+    border-radius: 0;
+    width: 100%;
     font-size: 15px;
+    background-color: green;
+    color: #fff;
 }
+
+.contact .btn:hover {
+
+    background-color: green !important;
+    color: #fff !important;
+}
+
+/*LOCATION*/
+
+.location img{
+    margin-top: 25px;
+}
+
+.location{
+}
+
+/*GROOMING*/
+
+
+.grooming {
+
+    padding: 50px 0 80px;
+    text-align: center;
+}
+
+.grooming p {
+
+    padding-bottom: 80px;
+    color: #737373;
+}
+
+.grooming h2 {
+
+    margin: 20px 0 20px;
+}
+
+.grooming .input-group {
+
+    margin-bottom: 25px;
+}
+
+.grooming .form-control {
+
+    border-radius: 0 !important;
+}
+
+.grooming span {
+
+    border-radius: 0 !important;
+}
+
+.grooming .btn {
+
+    border-radius: 0;
+    width: 100%;
+    font-size: 15px;
+    background-color: green;
+    color: #fff;
+}
+
+.grooming .btn:hover {
+
+    background-color: green !important;
+    color: #fff !important;
+}
+
+

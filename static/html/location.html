@@ -1,31 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>location</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/pet-shop/static/css/about.css">
 
-<div id="content">
-
-
-    <div id="header">
-        <p>Our Location!</p>
-
-
-    </div>
-
-    <div id="paragraph">
-        <p>Monday - Friday: 8:00 am - 6:00 pm<br>
-            Saturday: 8:00 am -  5:00pm<br>
-            Sunday: CLOSED<br></p>
-
-        <div id="map" style="width:400px;height:400px;background:yellow"></div>
-        <script>
-            function myMap() {
-                var mapOptions = {
-                    center: new google.maps.LatLng(51.5, -0.12),
-                    zoom: 10,
-                    mapTypeId: google.maps.MapTypeId.HYBRID
-                }
-                var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-            }
-        </script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+</head>
+<body>
+<div id="location" class="location">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <img src="/pet-shop/static/images/doggrooming.jpg" class="img-responsive">
+            </div>
+            <div class="col-lg-4">
+                <h2>Our Location</h2>
+                <p>401 W Mountain St</p>
+                <p>Fayetteville, AR 72701</p>
+                <br>
+                <h2>Hours</h2>
+                <p>Mon–Thurs: 8am-8pm</p>
+                <p>Fri: 8am-5pm</p>
+                <p>Sat: 8am-5pm</p>
+                <p>Sun: 1-5pm</p>
+            </div>
+        </div>
     </div>
 </div>
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>
+</html>

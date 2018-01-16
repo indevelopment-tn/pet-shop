@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>grooming</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/pet-shop/static/css/about.css">
+
+
+    <div id="grooming">
+
+        <form id="grooming_form" method="post">
+            <h4>Grooming Appointment</h4>
+            <fieldset>
+                <input name="firstname" placeholder="First Name" type="text" tabindex="1" required autofocus>
+            </fieldset>
+            <fieldset>
+                <input name="lastname" placeholder="Last Name" type="text" tabindex="1" required autofocus>
+            </fieldset>
+            <fieldset>
+                <input name="email" placeholder="email" type="email" tabindex="2" required>
+            </fieldset>
+            <fieldset>
+                <input name="address" placeholder="Address" type="text" tabindex="2" required>
+            </fieldset>
+            <fieldset>
+                <input name="city" placeholder="city" type="text" tabindex="2" required>
+            </fieldset>
+            <fieldset>
+                <input name="state" placeholder="state" type="text" tabindex="2" required>
+            </fieldset>
+            <fieldset>
+                <input name="zipcode" placeholder="zipcode" type="text" tabindex="2" required>
+            </fieldset>
+            <fieldset>
+                <input name="phone" placeholder="phone" type="text" tabindex="2" required>
+            </fieldset>
+            <fieldset>
+                <input name="type" placeholder="type of pet" type="text" tabindex="2" required>
+            </fieldset>
+            <fieldset>
+                <input name="petname" placeholder="Pet Name" type="text" tabindex="2" required>
+            </fieldset>
+            <fieldset>
+                <input name="petage" placeholder="Pet age" type="text" tabindex="2" required>
+            </fieldset>
+            <fieldset>
+                <input type="radio" name="fixed" value="Yes" checked> Yes<br>
+                <input type="radio" name="fixed" value="No"> No<br>
+            </fieldset>
+            <fieldset>
+                <textarea name="message" placeholder="Type your message here...." tabindex="5" required></textarea>
+            </fieldset>
+            <fieldset>
+                <button onclick="process_contact_form()" name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+            </fieldset>
+
+        </form>
+    </div>
+
+    <script src="/pet-shop/static/js/grooming.js"></script>
