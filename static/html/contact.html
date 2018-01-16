@@ -4,25 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <title>grooming</title>
-    <link rel="stylesheet" type="text/css" href="/pet-shop/static/css/contact_form_style.css">
+    <link rel="stylesheet" type="text/css" href="/pet-shop/static/css/about.css">
 </head>
 
 
 <div class="container">
     <form id="contact_form" method="post">
         <h4>Contact us </h4>
-        <fieldset>
-            <input name="name" placeholder="Your name" type="text" tabindex="1" required autofocus>
-        </fieldset>
-        <fieldset>
-            <input name="email" placeholder="Your Email Address" type="email" tabindex="2" required>
-        </fieldset>
-        <fieldset>
-            <textarea name="message" placeholder="Type your message here...." tabindex="5" required></textarea>
-        </fieldset>
-        <fieldset>
-            <button onclick="process_contact_form()" name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-        </fieldset>
+
+        <input name="name" placeholder="Your name" type="text" tabindex="1" required autofocus>
+        <br>
+        <input name="email" placeholder="Your Email Address" type="email" tabindex="2" required>
+        <br>
+        <textarea name="message" placeholder="Type your message here...." tabindex="5" required></textarea>
+        <br>
+        <button onclick="process_contact_form()" name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+
 
     </form>
 </div>
