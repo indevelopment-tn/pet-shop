@@ -5,8 +5,9 @@
 
 
 html{
-    background: url("/pet-shop/static/images/homepage2.jpg") no-repeat center fixed;
+    background: url("/pet-shop/static/images/homescreen.png") no-repeat center fixed;
     background-size: cover;
+
 }
 
 #container{
@@ -15,7 +16,7 @@ html{
 }
 
 header{
-    background: #FFFFFF;
+    background: white;
     font-family: Arial;
     font-size: 15px;
     padding: 2px;
@@ -89,16 +90,19 @@ nav a:hover::before{
     clear: both;
     margin: 0 auto;
    text-align: center;
-    padding-bottom: 10px;
+
 
 
 }
 
 #greeting{
     font-family: 'Satisfy', cursive;
-    font-size: 90px;
+    font-size: 80px;
     color: white;
-    padding-top: 170px;
+    padding-top: 200px;
+    margin-left: 58%;
+
+
 
 }
 
@@ -120,6 +124,8 @@ button {
     font-size: 16px;
     cursor: pointer;
     border-radius: 8px;
+    margin-left: 58%;
+    margin-top: 15px;
 }
 
 
