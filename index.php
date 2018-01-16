@@ -35,7 +35,7 @@ switch ($page) {
         $content_page = 'about.html';
         break;
     case "grooming":
-        $content_page = 'grooming.html';
+        $content_page = 'grooming4.html';
         break;
     case 'location':
         $content_page = 'location.html';
