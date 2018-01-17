@@ -6,8 +6,6 @@
  * Time: 7:28 PM
  */
 
-#$db = new mysqli('localhost','root','','pet_shop');
-#print_r($db);
 
 # header
 include_once('static/html/header.html');

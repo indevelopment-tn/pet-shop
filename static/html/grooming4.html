@@ -37,6 +37,22 @@
             <fieldset>
                 <input name="phone" placeholder="phone" type="text" tabindex="2" required>
             </fieldset>
+            <!-- Choose pet type -->
+            <fieldset>
+                <select id="pet_type" name="type" placeholder="type of pet" required onchange="toggle_breed_required(this)">
+                    <option value="dog">Dog</option>
+                    <option value="cat" selected>Cat</option>
+                </select>
+            </fieldset>
+
+            <!-- Choose type of dog -->
+            <fieldset>
+                <select id="breed_name" name="breed" placeholder="breed">
+                    <option value="Boxer">Boxer</option>
+                    <option value="chow">Chow</option>
+                </select>
+            </fieldset>
+
             <fieldset>
                 <input name="type" placeholder="type of pet" type="text" tabindex="2" required>
             </fieldset>

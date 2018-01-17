@@ -1,4 +1,8 @@
-//$(document).ready(function(){
+$(document).ready(function(){
+    $("#breed_name").prop('required', false);
+    $("#breed_name").hide();
+    $("#breed_name").val("");
+});
 
 function validate_contact_form(form_data){
     var retval = true
@@ -143,7 +147,8 @@ function process_contact_form(){
     var form = $('#grooming_form'); //form id here
     //collect data from the form
     var contact_inputs = {
-        name:form.find("input[name='name']").val(),
+        firstname:form.find("input[name='firstname']").val(),
+        lastname:form.find("input[name='lastname']").val(),
         email:form.find("input[name='email']").val(),
         message:form.find("textarea[name='message']").val(),
         address:form.find("input[name='address']").val(),
@@ -171,6 +176,19 @@ function process_contact_form(){
 
 }
 
+function toggle_breed_required(x){
+    var value = $(x).val();
+    if (value == "dog") {
+        $("#breed_name").val("")
+        $("#breed_name").prop('required', true);
+        $("#breed_name").show();
+    }else{
+        $("#breed_name").prop('required', false);
+        $("#breed_name").hide();
+        $("#breed_name").val("");
+    }
+}
+
 function send_contact_data(form_data){
 
     // transmit form data
@@ -183,7 +201,7 @@ function send_contact_data(form_data){
 
         $.ajax({
             type: 'POST',
-            url: "/pet-shop/contact_email.php",
+            url: "/pet-shop/php/submit_grooming_request.php",
             data:form_data,
 
             beforeSend: function(){
@@ -196,18 +214,18 @@ function send_contact_data(form_data){
 
         //delete messages when submit
 
-        document.getElementById("firstname").value= "";
-        document.getElementById("lastname").value= "";
-        document.getElementById("email").value= "";
-        document.getElementById("message").value= "";
-        document.getElementById("address").value= "";
-        document.getElementById("city").value= "";
-        document.getElementById("state").value= "";
-        document.getElementById("zipecode").value= "";
-        document.getElementById("phone").value= "";
-        document.getElementById("type").value= "";
-        document.getElementById("petname").value= "";
-        document.getElementById("petage").value= "";
+        document.getElementsByName("firstname").value= "";
+        document.getElementsByName("lastname").value= "";
+        document.getElementsByName("email").value= "";
+        document.getElementsByName("message").value= "";
+        document.getElementsByName("address").value= "";
+        document.getElementsByName("city").value= "";
+        document.getElementsByName("state").value= "";
+        document.getElementsByName("zipecode").value= "";
+        document.getElementsByName("phone").value= "";
+        document.getElementsByName("type").value= "";
+        document.getElementsByName("petname").value= "";
+        document.getElementsByName("petage").value= "";
 
 
     })

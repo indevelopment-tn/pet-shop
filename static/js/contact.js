@@ -77,7 +77,7 @@
 
             $.ajax({
                 type: 'POST',
-                url: "/pet-shop/contact_email.php",
+                url: "/pet-shop/php/contact_email.php",
                 data:form_data,
 
                 beforeSend: function(){
