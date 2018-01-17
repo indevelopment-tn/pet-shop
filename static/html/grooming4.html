@@ -13,6 +13,14 @@
 
         <form id="grooming_form" method="post">
             <h4>Grooming Appointment</h4>
+            <div id="grooming_description">
+                <p>
+                    Our professional, academy-trained, safety-certified dog & cat stylists are at
+                    your service. With our Look Great Guarantee, if your pet doesn’t look great, we’ll
+                    do what it takes to make it right.
+                </p>
+
+            </div>
             <fieldset>
                 <input name="firstname" placeholder="First Name" type="text" tabindex="1" required autofocus>
             </fieldset>
@@ -62,7 +70,7 @@
                 <input name="petage" placeholder="Pet age" type="text" tabindex="9" required>
             </fieldset>
             <fieldset>
-                <input id="ns_value" type="checkbox" name="fixed" value="10"> Neutered\Spade<br>
+                <input id="ns_value" type="checkbox" name="fixed" value="1"> Neutered\Spade<br>
             </fieldset>
             <fieldset>
                 <button onclick="process_groom_form()" name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
@@ -70,5 +78,7 @@
 
         </form>
     </div>
+
+
 
     <script src="/pet-shop/static/js/grooming.js"></script>

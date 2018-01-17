@@ -159,7 +159,8 @@ function process_groom_form(){
         type:form.find("input[name='type']").val(),
         petname:form.find("input[name='petname']").val(),
         petage:form.find("input[name='petage']").val(),
-        ns_val:form.find("input[name='fixed']").val()
+        ns_val:form.find("input[name='fixed']").val(),
+        breed: form.find("input[name='breed']").val()
     }
 
     //have the form data validated
