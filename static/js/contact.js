@@ -1,4 +1,4 @@
-//$(document).ready(function(){
+
 
     function validate_contact_form(form_data){
         var retval = true
@@ -90,9 +90,9 @@
 
             //delete messages when submit
 
-            document.getElementById("name").value= "";
-            document.getElementById("email").value= "";
-            document.getElementById("message").value= "";
+            document.getElementsByName("name").value= "";
+            document.getElementsByName("email").value= "";
+            document.getElementsByName("message").value= "";
 
         })
     }

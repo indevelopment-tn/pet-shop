@@ -4,8 +4,8 @@ $(document).ready(function(){
     $("#breed_name").val("");
 });
 
-function validate_contact_form(form_data){
-    var retval = true
+function validate_groom_form(form_data){
+    var retval = true;
 
     /*------------------------------------
     | check first name value of the form
@@ -143,10 +143,10 @@ function validate_contact_form(form_data){
     return retval;
 }
 
-function process_contact_form(){
+function process_groom_form(){
     var form = $('#grooming_form'); //form id here
     //collect data from the form
-    var contact_inputs = {
+    var groom_inputs = {
         firstname:form.find("input[name='firstname']").val(),
         lastname:form.find("input[name='lastname']").val(),
         email:form.find("input[name='email']").val(),
@@ -158,28 +158,25 @@ function process_contact_form(){
         phone:form.find("input[name='phone']").val(),
         type:form.find("input[name='type']").val(),
         petname:form.find("input[name='petname']").val(),
-        petage:form.find("input[name='petage']").val()
-
-
+        petage:form.find("input[name='petage']").val(),
+        ns_val:form.find("input[name='fixed']").val()
     }
 
     //have the form data validated
-    if (validate_contact_form(contact_inputs) == true){
-        send_contact_data(contact_inputs);
+    if (validate_groom_form(groom_inputs) == true){
+        send_groom_data(groom_inputs);
     }else{
         //we can review the instructions to see if there is a better
         // way to render the info
         alert("Failed to Pass Validation");
     }
 
-
-
 }
 
 function toggle_breed_required(x){
     var value = $(x).val();
     if (value == "dog") {
-        $("#breed_name").val("")
+        $("#breed_name").val("");
         $("#breed_name").prop('required', true);
         $("#breed_name").show();
     }else{
@@ -189,7 +186,7 @@ function toggle_breed_required(x){
     }
 }
 
-function send_contact_data(form_data){
+function send_groom_data(form_data){
 
     // transmit form data
     var form = $('#grooming_form');
@@ -221,13 +218,11 @@ function send_contact_data(form_data){
         document.getElementsByName("address").value= "";
         document.getElementsByName("city").value= "";
         document.getElementsByName("state").value= "";
-        document.getElementsByName("zipecode").value= "";
+        document.getElementsByName("zipcode").value= "";
         document.getElementsByName("phone").value= "";
         document.getElementsByName("type").value= "";
         document.getElementsByName("petname").value= "";
         document.getElementsByName("petage").value= "";
-
-
     })
 }
 //});

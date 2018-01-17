@@ -39,23 +39,22 @@
             </fieldset>
             <!-- Choose pet type -->
             <fieldset>
-                <select id="pet_type" name="type" placeholder="type of pet" required onchange="toggle_breed_required(this)">
+                <select id="pet_type" name="type"  required onchange="toggle_breed_required(this)">
+                    <option value="" disabled selected>Choose Pet Type</option>
                     <option value="dog">Dog</option>
-                    <option value="cat" selected>Cat</option>
+                    <option value="cat">Cat</option>
                 </select>
             </fieldset>
 
             <!-- Choose type of dog -->
             <fieldset>
-                <select id="breed_name" name="breed" placeholder="breed">
+                <select id="breed_name" name="breed" >
+                    <option value="" disabled selected>Choose Breed</option>
                     <option value="Boxer">Boxer</option>
                     <option value="chow">Chow</option>
                 </select>
             </fieldset>
 
-            <fieldset>
-                <input name="type" placeholder="type of pet" type="text" tabindex="2" required>
-            </fieldset>
             <fieldset>
                 <input name="petname" placeholder="Pet Name" type="text" tabindex="2" required>
             </fieldset>
@@ -63,14 +62,10 @@
                 <input name="petage" placeholder="Pet age" type="text" tabindex="2" required>
             </fieldset>
             <fieldset>
-                <input type="radio" name="fixed" value="Yes" checked> Yes<br>
-                <input type="radio" name="fixed" value="No"> No<br>
+                <input id="ns_value" type="checkbox" name="fixed" value="1"> Neutered\Spade<br>
             </fieldset>
             <fieldset>
-                <textarea name="message" placeholder="Type your message here...." tabindex="5" required></textarea>
-            </fieldset>
-            <fieldset>
-                <button onclick="process_contact_form()" name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                <button onclick="process_groom_form()" name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
             </fieldset>
 
         </form>

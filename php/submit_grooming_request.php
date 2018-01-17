@@ -21,7 +21,7 @@ $pet_age = strip_tags(htmlspecialchars($_POST['petage']));
 ####################################
 if (!$db) {
     die("Connection failed: " . mysqli_connect_error());
-    #return false;
+    return '500';
 }
 ####################
 # build SQL query
@@ -38,4 +38,5 @@ if (mysqli_query($db, $sql)) {
 }
 
 mysqli_close($db);
+return '200';
 
